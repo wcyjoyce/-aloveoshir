@@ -1,0 +1,39 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  .col-xs-12, .col-sm-6, .col-lg-3 {
+    padding: 0px !important;
+  }
+
+  .card {
+    position: relative;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .card-body {
+    padding: 10px 10px 10px 20px;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .card:hover .card-link {
+  opacity: 0.3;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
+}

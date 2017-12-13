@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <div class="message-content">
+  <%= cl_image_tag @message.photo, height: 300, width: 600, crop: :fill %>
+  <h3><%= @message.message %></h3>
+  <h4>- <a href="mailto:<%= @message.email %>"><%= @message.name %></a></h4>
+  </div>
+</div>

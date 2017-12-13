@@ -5,10 +5,6 @@ class MessagesController < ApplicationController
     @messages = Message.all
   end
 
-  def show
-    @message = Message.new
-  end
-
   def new
     @message = Message.new
   end
@@ -20,6 +16,9 @@ class MessagesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
   end
 
   private
