@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 ruby '2.3.5'
 
-gem 'figaro'
+
 gem 'jbuilder', '~> 2.0'
 gem 'pg'
 gem 'puma'
 gem 'rails', '5.1.4'
 gem 'redis'
-
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
@@ -15,6 +14,11 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+
+# Photo Uploads
+gem 'figaro'
+gem 'cloudinary', '1.1.7'
+gem 'carrierwave', '~> 1.2'
 
 group :development, :test do
   gem 'pry-byebug'

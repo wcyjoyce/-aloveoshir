@@ -1,2 +1,33 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="docScroller">
+
+<div class="page">
+  <div class="one" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-1.jpg' %>)">
+  </div>
+  <div class="content bottom">
+    <h1>Shirley & Alan</h1>
+    <h2>23 December 2017</h2>
+    <a href="mailto:alovesoshir@gmail.com" class="btn btn-default">RSVP</a>
+    <%= link_to "Leave a Message", new_message_path, class: "btn btn-default" %>
+  </div>
+</div>
+
+  <div class="page">
+    <div class="two" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-2.jpg' %>)">
+<!--       <div class="content left">
+      </div> -->
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="three" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-3.jpg' %>)">
+    </div>
+<!--     <div class="content right">
+    </div> -->
+  </div>
+
+  <div class="page">
+    <div class="four" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-4.jpg' %>)">
+    </div>
+  </div>
+
+</div>
