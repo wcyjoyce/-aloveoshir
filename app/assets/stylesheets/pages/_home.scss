@@ -1,15 +1,4 @@
 // Specific CSS for your home-page
-.page {
-  float: left;
-  width: 100vw;
-  height: 100vh;
-}
-
-// .flex {
-//   display: flex;
-//   overflow: hidden;
-//   position: relative;
-// }
 
 .docScroller {
   overflow-x: hidden;
@@ -23,10 +12,37 @@
   scroll-snap-destination: 100% 0%;
 }
 
+.page {
+  float: left;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-flex {
+  display: flex;
+  vertical-align: top;
+  height: 100vh;
+}
+
 .content {
-  background: white;
+  background: rgb(234,234,234);
   opacity: 0.3;
   padding: 20px;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    text-align: center;
+  }
+}
+
+.cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100vw;
 }
 
 .bottom {
@@ -35,34 +51,26 @@
   text-align: center;
 }
 
-.left, .right {
+table {
+  .time {
+    padding-left: 10px;
+    min-width: 90px;
+  }
+
+  .event {
+    min-width: 175px;
+  }
+}
+
+.half {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  height: 100vh;
   width: 50vw;
-  height: 100vh;
 }
 
-.one {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  height: 60vh;
-  width: 100vw;
-}
-
-.two {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  height: 100vh;
-}
-
-.three {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  height: 100vh;
-}
-
-.four {
+.anchor {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;

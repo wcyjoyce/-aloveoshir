@@ -1,32 +1,73 @@
 <div class="docScroller">
 
-<div class="page">
-  <div class="one" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-1.jpg' %>)">
-  </div>
-  <div class="content bottom">
-    <h1>Shirley & Alan</h1>
-    <h2>23 December 2017</h2>
-    <a href="mailto:alovesoshir@gmail.com" class="btn btn-default">RSVP</a>
-    <%= link_to "Leave a Message", new_message_path, class: "btn btn-default" %>
-  </div>
-</div>
-
+  <!-- Cover -->
   <div class="page">
-    <div class="two" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-2.jpg' %>)">
-<!--       <div class="content left">
-      </div> -->
+    <div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-1.jpg' %>)">
+    </div>
+    <div class="content bottom">
+      <div class="text">
+        <h1>Shirley & Alan</h1>
+        <h2>23 December 2017</h2>
+        <a href="mailto:alovesoshir@gmail.com" class="btn btn-default">RSVP</a>
+        &nbsp
+        <%= link_to "LEAVE A MESSAGE", new_message_path, class: "btn btn-default" %>
+      </div>
     </div>
   </div>
 
+  <!-- Schedule -->
   <div class="page">
-    <div class="three" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-3.jpg' %>)">
+    <div class="page-flex">
+      <div class="half" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-2.jpg' %>)">
+      </div>
+      <div class="content">
+        <div class="text">
+          <div class="title"><h3>SCHEDULE</h3></div>
+          <div class="paragraph">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="time">11:00am</td>
+                  <td class="event">Wedding Ceremony</td>
+                  <td class="venue">St Theresa's Church, 258 Prince Edward Road West, Prince Edward</td>
+                </tr>
+                <tr>
+                  <td class="time">6:00pm</td>
+                  <td class="event">Banquet Reception</td>
+                  <td class="venue">Island Ballroom, 5/F, Island Shangri-La Hong Kong, Supreme Court Road, Central</td>
+                </tr>
+                <tr>
+                  <td class="time">7:30pm</td>
+                  <td class="event">Banquet Dinner</td>
+                  <td class="venue">Island Ballroom, 5/F, Island Shangri-La Hong Kong, Supreme Court Road, Central</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-<!--     <div class="content right">
-    </div> -->
   </div>
 
+  <!-- Story -->
   <div class="page">
-    <div class="four" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-4.jpg' %>)">
+    <div class="page-flex">
+      <div class="content">
+        <div class="text">
+          <div class="title"><h3>STORY</h3></div>
+          <div class="paragraph">
+            <p>This is how Shirley and Loki met.</p>
+          </div>
+        </div>
+      </div>
+      <div class="half" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-3.jpg' %>)">
+      </div>
+    </div>
+  </div>
+
+  <!-- Anchor -->
+  <div class="page">
+    <div class="anchor" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-4.jpg' %>)">
     </div>
   </div>
 
