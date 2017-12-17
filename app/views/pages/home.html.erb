@@ -18,41 +18,36 @@
   </div>
 
   <div class="flex">
-    <!-- Schedule -->
-    <div class="half" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-2.jpg' %>)">
+    <!-- Desktop: Schedule -->
+    <div class="half hidden-xs" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-2.jpg' %>)">
       <div class="hover-content">
         <div class="text">
-          <div class="title"><h3>SCHEDULE</h3></div>
-          <div class="paragraph">
-            <table>
-              <tbody>
-                <tr>
-                  <td class="time">11:00am</td>
-                  <td class="event">Wedding Ceremony</td>
-                  <td class="venue"><a href="https://www.google.com.hk/maps/place/Saint+Teresa's+Church/@22.326012,114.1758543,17z/data=!3m1!4b1!4m5!3m4!1s0x340400cdbe39c11f:0x37bb02de66953a87!8m2!3d22.326012!4d114.178043" target="_blank">St Theresa's Church, 258 Prince Edward Road West, Prince Edward</a></td>
-                </tr>
-                <tr>
-                  <td class="time">6:00pm</td>
-                  <td class="event">Banquet Reception</td>
-                  <td class="venue"><a href="https://www.google.com.hk/maps/place/Island+Shangri-La,+Hong+Kong/@22.2771209,114.1622263,17z/data=!3m2!4b1!5s0x3404006632630071:0xb22ccd0fc5edffbc!4m5!3m4!1s0x34040066319c4c49:0x476edbf3622c83!8m2!3d22.277116!4d114.164415" target="_blank">Island Ballroom, 5/F, Island Shangri-La Hong Kong, Supreme Court Road, Central</a></td>
-                </tr>
-                <tr>
-                  <td class="time">7:30pm</td>
-                  <td class="event">Banquet Dinner</td>
-                  <td class="venue"><a href="https://www.google.com.hk/maps/place/Island+Shangri-La,+Hong+Kong/@22.2771209,114.1622263,17z/data=!3m2!4b1!5s0x3404006632630071:0xb22ccd0fc5edffbc!4m5!3m4!1s0x34040066319c4c49:0x476edbf3622c83!8m2!3d22.277116!4d114.164415" target="_blank">Island Ballroom, 5/F, Island Shangri-La Hong Kong, Supreme Court Road, Central</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <%= render "schedule" %>
         </div>
       </div>
     </div>
-    <!-- Story -->
-    <div class="half" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-3.jpg' %>)">
+    <!-- Desktop: Story -->
+    <div class="half hidden-xs" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-3.jpg' %>)">
       <div class="hover-content">
         <div class="text">
-          <div class="title"><h3>STORY</h3></div>
-          <div class="paragraph"><p>This is how Shirley and Loki met.</p></div>
+          <%= render "story" %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop: Schedule -->
+    <div class="half hidden-sm hidden-md hidden-lg" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'jap-portrait-2.jpg' %>)">
+      <div class="hover-content">
+        <div class="text">
+          <%= render "schedule" %>
+        </div>
+      </div>
+    </div>
+    <!-- Desktop: Story -->
+    <div class="half hidden-sm hidden-md hidden-lg" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'jap-portrait-3.jpg' %>)">
+      <div class="hover-content">
+        <div class="text">
+          <%= render "story" %>
         </div>
       </div>
     </div>

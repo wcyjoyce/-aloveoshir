@@ -24,17 +24,6 @@
   width: 100vw;
 }
 
-@media (max-width: 600px) {
-  .flex {
-    flex-direction: column;
-  }
-
-  .half, .content {
-    height: 100%;
-    width: 100%;
-  }
-}
-
 .half {
   background-size: cover;
   background-repeat: no-repeat;
@@ -112,4 +101,15 @@ table {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+}
+
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .half {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
 }
