@@ -3,8 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Francois+One|Source+Sans+Pro:300,400,600,700");
 
 // Define fonts for body and headers
-$headers-font: "Source Sans Pro", "Helvetica", "sans-serif";
+$headers-font: "Times", "Times", "serif";
 $body-font: "Francois One", "Helvetica", "sans-serif";
+
+// $headers-font: "Josefin Sans", "Helvetica", "sans-serif";
+// $body-font: "Times", "Times", "serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -16,5 +19,3 @@ $body-font: "Francois One", "Helvetica", "sans-serif";
 // }
 // $my-font: "Font Name";
 
-// $headers-font: "Josefin Sans", "Helvetica", "sans-serif";
-// $body-font: "Times", "Times", "serif";
