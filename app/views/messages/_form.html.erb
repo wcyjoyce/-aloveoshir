@@ -1,8 +1,8 @@
 <%= simple_form_for(message) do |m| %>
-  <%= m.input :name %>
-  <%= m.input :email %>
-  <%= m.input :message %>
-  <%= m.input :photo %>
+  <%= m.input :name, label: false, placeholder: "NAME" %>
+  <%= m.input :email, label: false, placeholder: "EMAIL" %>
+  <%= m.input :message, input_html: {rows: 5}, label: false, placeholder: "MESSAGE" %>
+  <%= m.input :photo, input_html: {hidden: true}, label: false %>
   <%= m.input :photo_cache, as: :hidden %>
-  <%= m.submit "Submit", class: "btn btn-default" %>
+  <%= m.submit "SUBMIT", class: "btn btn-default form-control" %>
 <% end %>

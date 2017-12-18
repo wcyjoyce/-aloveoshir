@@ -1,4 +1,31 @@
 .form {
   width: 90%;
   margin: auto;
+
+  h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 35px;
+    margin: 25px 0px;
+  }
+}
+
+.form-flex {
+  display: flex;
+  align-items: center;
+
+  .form-control {
+    font-size: 14px;
+    padding: 10px;
+    background: transparent;
+    border: solid 1px #B3ACA7;
+  }
+
+  .btn:hover {
+    background: #E2DEDB;
+  }
+
+  .optional {
+    font-size: 14px;
+  }
 }
