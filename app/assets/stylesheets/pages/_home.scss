@@ -43,7 +43,7 @@
   z-index: 5;
 }
 
-.half:hover .hover-content {
+.half:hover .hover-content, .half:active .hover-content {
   background: white;
   transition: 0.5s;
   opacity: 0.8;
