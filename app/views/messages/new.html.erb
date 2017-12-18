@@ -2,7 +2,9 @@
   <div class="half" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'form.jpg' %>)">
   </div>
   <div class="half">
-    <h1>Add New Message</h1>
-    <%= render "form", message: @message %>
+    <div class="form">
+      <h1>Add New Message</h1>
+      <%= render "form", message: @message %>
+    </div>
   </div>
 </div>
