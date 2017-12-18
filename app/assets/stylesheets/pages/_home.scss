@@ -97,9 +97,13 @@
     font-weight: lighter;
     margin: 25px 0px;
   }
+
+  .btn {
+    font-size: 16px;
+  }
 }
 
-mobile {
+.mobile {
   h1 {
     font-size: 45px;
     letter-spacing: 10px;
@@ -112,6 +116,10 @@ mobile {
     letter-spacing: 3px;
     font-weight: lighter;
     margin: 20px 0px;
+  }
+
+  .btn {
+    font-size: 14px;
   }
 }
 
