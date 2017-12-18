@@ -1,14 +1,19 @@
 <div class="cards">
-  <% @messages.each do |message| %>
-    <div class="col-xs-12 col-sm-4 col-lg-3">
-      <% photo_url = message.photo? ? message.photo : "appicbtz2anicytb79lj" %>
-      <div class="card" style="background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url(<%= cl_image_path photo_url %>">
-        <div class="card-body">
-          <h4><%= message.name.upcase %></h4>
-          <p><%= message.message %></p>
-          <%= link_to "", message_path(message), class: "card-link" %>
+  <% if @messages.empty? %>
+    <div class="anchor" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'empty.jpg' %>">
+    </div>
+  <% else %>
+    <% @messages.each do |message| %>
+      <div class="col-xs-12 col-sm-4 col-lg-3">
+        <% photo_url = message.photo? ? message.photo : "appicbtz2anicytb79lj" %>
+        <div class="card" style="background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url(<%= cl_image_path photo_url %>">
+          <div class="card-body">
+            <h4><%= message.name.upcase %></h4>
+            <p><%= message.message %></p>
+            <%= link_to "", message_path(message), class: "card-link" %>
+          </div>
         </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
 </div>
