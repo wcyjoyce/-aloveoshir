@@ -1,0 +1,45 @@
+<div class="cards">
+  <% if @photos.empty? %>
+    <div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path 'empty.jpg' %>">
+    </div>
+    <div class="content bottom hidden-xs">
+      <div class="text">
+        <h1><i class="fa fa-heart" aria-hidden="true"></i></h1>
+      </div>
+    </div>
+  <% else %>
+    <% @photos.each do |photo| %>
+      <div class="col-xs-12 col-sm-4 col-lg-3">
+        <% photo_url = photo.photo? ? photo.photo : "appicbtz2anicytb79lj" %>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= cl_image_path photo_url %>">
+          <div class="card-body">
+            <%= link_to "", photo_path(photo), class: "card-link" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="hidden-links hidden">
+  <ul class="list-inline">
+    <%= link_to new_photo_path do %>
+      <li><i class="fa fa-plus" aria-hidden="true" id="add"></i></li>
+    <% end %>
+  </ul>
+</div>
+
+<%= content_for(:title, "alovesoshir | All Photos") %>
+
+<%= content_for(:after_js) do %>
+  <script>
+    document.addEventListener("keyup",function(e){
+      var key = e.which || e.keyCode;
+      switch(key){
+        case 65: // "A"
+          document.getElementById("add").click();
+        break;
+      }
+    });
+  </script>
+<% end %>

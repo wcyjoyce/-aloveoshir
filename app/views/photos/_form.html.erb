@@ -1,0 +1,11 @@
+<%= simple_form_for(photo) do |p| %>
+  <%= p.input :caption, placeholder: "PHOTO CAPTION", label: false %>
+  <%= p.input :photo, input_html: {hidden: true}, label: false %>
+  <%= p.input :photo_cache, as: :hidden %>
+  <div class="col-xs-6">
+    <%= p.submit "SUBMIT", class: "btn btn-default form-control" %>
+  </div>
+  <div class="col-xs-6">
+    <%= link_to "CANCEL", photos_path, class: "btn btn-default form-control" %>
+  </div>
+<% end %>

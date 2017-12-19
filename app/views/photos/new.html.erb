@@ -1,0 +1,12 @@
+<div class="flex">
+  <div class="half" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'form.jpg' %>)">
+  </div>
+  <div class="half form-flex">
+    <div class="form">
+      <h1>ADD NEW PHOTO</h1>
+      <%= render "form", photo: @photo %>
+    </div>
+  </div>
+</div>
+
+<%= content_for(:title, "Add New Photo for Shirley and Alan") %>
