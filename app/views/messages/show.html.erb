@@ -4,6 +4,7 @@
     <h3>DEAR SHIRLEY AND ALAN</h3>
     <p><%= @message.message %></p>
     <p><a href="mailto:<%= @message.email %>"><%= @message.name %></a></p>
+    <%= link_to "All Messages", messages_path %>
     <div class="message-links">
       <% if @message.previous.presence %>
         <%= link_to @message.previous do %>
@@ -24,3 +25,5 @@
     </div>
   </div>
 </div>
+
+<%= content_for(:title, "Message from " + @message.name) %>

@@ -10,10 +10,17 @@
           <div class="card-body">
             <%= link_to "", message_path(message), class: "card-link" %>
             <h4><%= message.name.upcase %></h4>
-            <p><%= message.message %></p>
+            <% message_count = 230 %>
+            <% if message.message.chars.count > message_count %>
+              <p><%= message.message.chars.first(message_count).join %>...</p>
+            <% else %>
+              <p><%= message.message %></p>
+            <% end %>
           </div>
         </div>
       </div>
     <% end %>
   <% end %>
 </div>
+
+<%= content_for(:title, "alovesoshir | All Messages") %>
