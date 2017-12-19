@@ -4,5 +4,10 @@
   <%= m.input :message, input_html: {rows: 5}, label: false, placeholder: "MESSAGE" %>
   <%= m.input :photo, input_html: {hidden: true}, label: false %>
   <%= m.input :photo_cache, as: :hidden %>
-  <%= m.submit "SUBMIT", class: "btn btn-default form-control" %>
+  <div class="col-xs-6">
+    <%= m.submit "SUBMIT", class: "btn btn-default form-control" %>
+  </div>
+  <div class="col-xs-6">
+    <%= link_to "CANCEL", root_path, class: "btn btn-default form-control" %>
+  </div>
 <% end %>

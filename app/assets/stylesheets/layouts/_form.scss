@@ -22,12 +22,18 @@
     border: solid 1px #B3ACA7;
   }
 
+  .col-xs-6 {
+    padding: 2px;
+  }
+
   .btn {
     color: #999999;
+    margin-bottom: 5px;
 
     &:hover {
-      color: $gray;
+      color: white;
       background: #B3ACA7;
+      transition: 0.5s;
     }
   }
 
