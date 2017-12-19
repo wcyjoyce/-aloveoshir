@@ -1,0 +1,11 @@
+<!-- Links to Next/Previous Messages -->
+<% if @message.previous.presence %>
+  <%= link_to @message.previous do %>
+    <li><i class="fa fa-arrow-circle-o-left" aria-hidden="true" id="previous"></i></li>
+  <% end %>
+<% end %>
+<% if @message.next.presence %>
+  <%= link_to @message.next do %>
+    <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true" id="next"></i></li>
+  <% end %>
+<% end %>
