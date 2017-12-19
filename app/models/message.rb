@@ -1,6 +1,6 @@
 class Message < ApplicationRecord
   validates :name, :email, :message, presence: true
-  after_create :send_confirmation_email
+  # after_create :send_confirmation_email
 
   scope :next, lambda {|id| where("id > ?",id).order("id ASC") }
   scope :previous, lambda {|id| where("id < ?",id).order("id DESC") }
