@@ -20,6 +20,9 @@ gem 'figaro'
 gem 'cloudinary', '1.1.7'
 gem 'carrierwave', '~> 1.2'
 
+# Mailer
+gem "letter_opener", group: :development
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'

@@ -64,7 +64,7 @@
     </ul>
   </div>
 
-<%= content_for(:title, "Message from " + @message.name) %>
+<%= content_for(:title, "Message from " + @message.name.capitalize) %>
 
 <%= content_for(:after_js) do %>
   <script>
