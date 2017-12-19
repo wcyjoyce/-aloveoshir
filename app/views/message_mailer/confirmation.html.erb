@@ -1,0 +1,19 @@
+<style>
+  body {
+    font-family: sans-serif;
+  }
+</style>
+
+<h2>Hi <%= @message.name.capitalize %>,</h2>
+
+<p>Thanks for your message! Here's a copy of it for your reference:</p>
+<p><%= cl_image_tag @message.photo, height: 400, width: 600, crop: :fill %></p>
+<p><%= @message.message %></p>
+<p>===</p>
+<p>We're at a loss for words for all the love! Thank you so much!</p>
+<p>
+  Lots of love,
+  <br>
+  Shirley and Alan
+</p>
+
