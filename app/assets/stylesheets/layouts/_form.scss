@@ -1,11 +1,12 @@
 .form {
   width: 85%;
   margin: auto;
+  color: #999999;
 
   h1 {
+    font-size: 35px;
     letter-spacing: 2px;
     text-align: center;
-    font-size: 35px;
     margin: 25px 0px;
   }
 }
@@ -21,8 +22,13 @@
     border: solid 1px #B3ACA7;
   }
 
-  .btn:hover {
-    background: #E2DEDB;
+  .btn {
+    color: #999999;
+
+    &:hover {
+      color: $gray;
+      background: #B3ACA7;
+    }
   }
 
   .optional {
