@@ -14,26 +14,38 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+
+    &:hover {
+      opacity: 0.8;
+
+      & .card-body {
+        height: 100px;
+      }
+    }
   }
 
   .card-body {
-    padding: 10px 10px 10px 20px;
+    padding: 0px 15px;
     color: white;
-    transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+
+    p {
+      font-weight: lighter;
+      font-size: 16px;
+    }
   }
 
-  .card:hover .card-link {
-  opacity: 0.3;
-  background-color: white;
-  transition: 0.3s;
-}
-
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
-}
+  .card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+  }
 }

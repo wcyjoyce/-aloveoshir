@@ -1,7 +1,7 @@
 .form {
   width: 85%;
   margin: auto;
-  color: #999999;
+  color: $dark-gray;
 
   h1 {
     font-size: 35px;
@@ -19,7 +19,7 @@
     font-size: 14px;
     padding: 10px;
     background: transparent;
-    border: solid 1px #B3ACA7;
+    border: solid 1px $border;
   }
 
   .col-xs-6 {
@@ -27,13 +27,13 @@
   }
 
   .btn {
-    color: #999999;
+    color: $dark-gray;
     margin-bottom: 5px;
 
     &:hover {
       color: white;
-      background: #B3ACA7;
-      transition: 0.5s;
+      background: $border;
+      transition: 0.5s ease-in-out;
     }
   }
 

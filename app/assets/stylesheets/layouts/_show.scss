@@ -7,7 +7,16 @@
   height: 100vh;
 }
 
+.message-photo {
+  border-radius: 3px;
+//   width: 70%;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+}
+
 .message-content {
+  color: $dark-gray;
+
   h4 {
     text-align: right;
   }

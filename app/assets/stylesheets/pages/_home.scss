@@ -45,7 +45,7 @@
 
 .half:hover .hover-content, .half:active .hover-content {
   background: white;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   opacity: 0.8;
 
   padding: 20px;
@@ -103,6 +103,13 @@
   }
 }
 
+.anchor {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
 .mobile {
   h1 {
     font-size: 45px;
@@ -121,13 +128,6 @@
   .btn {
     font-size: 14px;
   }
-}
-
-.anchor {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
 }
 
 @media (max-width: 600px) {
