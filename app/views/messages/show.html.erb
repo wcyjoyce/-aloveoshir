@@ -43,10 +43,10 @@
   </div>
 </div> -->
 
-  <div class="hidden hidden-links">
+  <div class="hidden-links">
     <ul class="list-inline">
       <%= link_to message_path(@message), method: :delete, data: { confirm: "Are you sure you want to delete this message?" } do %>
-          <li><i class="fa fa-trash" aria-hidden="true"></i></li>
+        <li><i class="fa fa-trash" aria-hidden="true" id="destroy"></i></li>
       <% end %>
       <%= link_to messages_path do %>
         <li><i class="fa fa-envelope-o" aria-hidden="true" id="all"></i></li>
@@ -79,6 +79,9 @@
         break;
         case 8: // delete button
           document.getElementById("all").click();
+        break;
+        case 68: // "D"
+          document.getElementById("destroy").click();
         break;
       }
     });
