@@ -1,4 +1,48 @@
 <div class="wrapper">
+  <div class="page">
+    <!-- Desktop: Cover -->
+    <div class="cover hidden-xs" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path @message.photo; %>)">
+    </div>
+    <div class="show-content bottom hidden-xs">
+      <div class="message-content">
+        <h3>DEAR SHIRLEY & ALAN</h3>
+        <p><%= @message.message %></p>
+        <h4><a href="mailto:<%= @message.email %>"><%= @message.name.upcase %></a></h4>
+        <%= link_to root_path do %>
+          <i class="fa fa-home" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+    <!-- Mobile: Cover -->
+    <div class="cover hidden-sm hidden-md hidden-lg" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path @message.photo; %>)">
+    </div>
+    <div class="mobile show-content bottom hidden-sm hidden-md hidden-lg">
+      <div class="message-content">
+        <h3>DEAR SHIRLEY & ALAN</h3>
+        <p><%= @message.message %></p>
+        <h4><a href="mailto:<%= @message.email %>"><%= @message.name.upcase %></a></h4>
+        <%= link_to root_path do %>
+          <i class="fa fa-home" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--   <div class="message-content">
+    <% photo_url = @message.photo? ? @message.photo : "appicbtz2anicytb79lj" %>
+    <%= cl_image_tag photo_url, height: 400, width: 600, crop: :fill, class: "message-photo" %>
+    <h3>DEAR SHIRLEY AND ALAN</h3>
+    <p><%= @message.message %></p>
+    <h4><a href="mailto:<%= @message.email %>"><%= @message.name.upcase %></a></h4>
+    <div class="message-links">
+      <%= link_to root_path do %>
+        <i class="fa fa-home" aria-hidden="true"></i>
+      <% end %>
+    </div>
+  </div>
+</div> -->
+
   <div class="hidden-links hidden">
     <ul class="list-inline">
       <%= link_to message_path(@message), method: :delete, data: { confirm: "Are you sure you want to delete this message?" } do %>
@@ -16,27 +60,6 @@
       <% end %>
     </ul>
   </div>
-
-  <div class="message-content">
-    <% photo_url = @message.photo? ? @message.photo : "appicbtz2anicytb79lj" %>
-    <%= cl_image_tag photo_url, height: 400, width: 600, crop: :fill, class: "message-photo" %>
-    <h3>DEAR SHIRLEY AND ALAN</h3>
-    <p><%= @message.message %></p>
-    <h4><a href="mailto:<%= @message.email %>"><%= @message.name %></a></h4>
-
-    <%= link_to "All Messages", messages_path %>
-
-    <div class="message-links">
-      <ul class="list-inline">
-
-        <%= link_to root_path do %>
-          <li><i class="fa fa-home" aria-hidden="true"></i></li>
-        <% end %>
-
-      </ul>
-    </div>
-  </div>
-</div>
 
 <%= content_for(:title, "Message from " + @message.name) %>
 

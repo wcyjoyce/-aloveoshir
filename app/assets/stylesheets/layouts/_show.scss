@@ -7,11 +7,17 @@
   height: 100vh;
 }
 
-.message-photo {
-  border-radius: 3px;
+.show-content {
+  padding: 20px;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .message-content {
+  width: 95%;
+  margin: auto;
   color: $dark-gray;
 
   a {
@@ -35,7 +41,7 @@
 
   h4 {
     text-align: right;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -51,6 +57,5 @@
 
   a {
     text-decoration: none;
-    // color: $light-gray;
   }
 }
