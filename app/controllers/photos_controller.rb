@@ -12,7 +12,7 @@ class PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
     if @photo.save
-      redirect_to photo_path(@photo)
+      redirect_to photos_path
     else
       render :new
     end
@@ -32,7 +32,7 @@ class PhotosController < ApplicationController
     params.require(:photo).permit(:photo, :caption)
   end
 
-  def set_message
+  def set_photo
     @photo = Photo.find(params[:id])
   end
 end
