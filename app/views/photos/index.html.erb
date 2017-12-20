@@ -17,13 +17,14 @@
         </div>
       </div>
     <% end %>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01">
-      <div id="caption"></div>
-    </div>
   <% end %>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
 
 <div class="hidden-links hidden">
@@ -49,7 +50,7 @@
     // var modal = document.getElementById('myModal'); // gets modal
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.querySelector("[data-photo-id='<%= @photo.id %>']");
+    // var img = document.querySelector("[data-photo-id='<%= @photo.id %>']");
     // var modalImg = document.getElementById("img01");
     // var captionText = document.getElementById("caption");
     // img.onclick = function() {
