@@ -1,0 +1,48 @@
+<div class="photo-wrapper">
+  <div class="arrow">
+    <% if @photo.previous.presence %>
+      <%= link_to @photo.previous do %>
+        <i class="fa fa-arrow-circle-o-left" aria-hidden="true" id="previousPhoto"></i>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="image">
+    <%= cl_image_tag @photo.photo, crop: :fill, class: "photo" %>
+  </div>
+  <div class="arrow">
+    <% if @photo.next.presence %>
+      <%= link_to @photo.next do %>
+        <i class="fa fa-arrow-circle-o-right" aria-hidden="true" id="nextPhoto"></i>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<div class="hidden-links hidden">
+  <ul class="list-inline">
+    <%= link_to photos_path do %>
+      <li><i class="fa fa-picture-o" aria-hidden="true" id="allPhotos"></i></li>
+    <% end %>
+  </ul>
+</div>
+
+<%= content_for(:title, "Photos of Shirley and Alan") %>
+
+<%= content_for(:after_js) do %>
+  <script>
+    document.addEventListener("keyup",function(e){
+      var key = e.which || e.keyCode;
+      switch(key){
+        case 37: // left arrow
+          document.getElementById("previousPhoto").click();
+        break;
+        case 39: // right arrow
+          document.getElementById("nextPhoto").click();
+        break;
+        case 27: // escape
+          document.getElementById("allPhotos").click();
+        break;
+      }
+    });
+  </script>
+<% end %>

@@ -8,10 +8,10 @@ class Photo < ApplicationRecord
   mount_uploader :photo, PhotoUploader
 
   def next
-    Message.next(self.id).first
+    Photo.next(self.id).first
   end
 
   def previous
-    Message.previous(self.id).first
+    Photo.previous(self.id).first
   end
 end

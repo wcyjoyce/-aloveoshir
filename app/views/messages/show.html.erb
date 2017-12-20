@@ -49,16 +49,16 @@
         <li><i class="fa fa-trash" aria-hidden="true" id="delete"></i></li>
       <% end %>
       <%= link_to messages_path do %>
-        <li><i class="fa fa-envelope-o" aria-hidden="true" id="all"></i></li>
+        <li><i class="fa fa-envelope-o" aria-hidden="true" id="allMessages"></i></li>
       <% end %>
       <% if @message.previous.presence %>
         <%= link_to @message.previous do %>
-          <li><i class="fa fa-arrow-circle-o-left" aria-hidden="true" id="previous"></i></li>
+          <li><i class="fa fa-arrow-circle-o-left" aria-hidden="true" id="previousMessage"></i></li>
         <% end %>
       <% end %>
       <% if @message.next.presence %>
         <%= link_to @message.next do %>
-          <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true" id="next"></i></li>
+          <li><i class="fa fa-arrow-circle-o-right" aria-hidden="true" id="nextMessage"></i></li>
         <% end %>
       <% end %>
     </ul>
@@ -71,14 +71,14 @@
     document.addEventListener("keyup",function(e){
       var key = e.which || e.keyCode;
       switch(key){
-        case 37: // left arrow
-          document.getElementById("previous").click();
+        case 188: // "<"
+          document.getElementById("previousMessage").click();
         break;
-        case 39: // right arrow
-          document.getElementById("next").click();
+        case 190: // ">"
+          document.getElementById("nextMessage").click();
         break;
         case 77: // "M"
-          document.getElementById("all").click();
+          document.getElementById("allMessages").click();
         break;
         case 68: // "D"
           document.getElementById("delete").click();
