@@ -9,6 +9,11 @@
   <div class="image">
     <%= cl_image_tag @photo.photo, crop: :fill, class: "photo" %>
   </div>
+  <div class="x">
+    <%= link_to photos_path do %>
+      <i class="fa fa-times" aria-hidden="true"></i>
+    <% end %>
+  </div>
   <div class="arrow">
     <% if @photo.next.presence %>
       <%= link_to @photo.next do %>
