@@ -1,56 +1,26 @@
-  <!-- Cover -->
-  <div class="page">
-    <!-- Desktop: Cover -->
-    <div class="cover hidden-xs" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-1.jpg' %>)">
-    </div>
-    <div class="content bottom hidden-xs">
-      <div class="text">
-        <h1>SHIRLEY & ALAN</h1>
-        <h2>23 DECEMBER 2017</h2>
-        <%= link_to "LEAVE A MESSAGE", new_message_path, class: "btn btn-default" %>
-        <a href="https://www.instagram.com/explore/tags/alovesoshir/" class="btn btn-default">INSTAGRAM</a>
-        <%= link_to "GALLERY", photos_path, class: "btn btn-default" %>
-      </div>
-    </div>
-    <!-- Mobile: Cover -->
-    <div class="cover hidden-sm hidden-md hidden-lg" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'jap-portrait-1.jpg' %>)">
-    </div>
-    <div class="mobile content bottom hidden-sm hidden-md hidden-lg">
-      <div class="text">
-        <h1>SHIRLEY & ALAN</h1>
-        <h2>23 DECEMBER 2017</h2>
-        <a href="mailto:alovesoshir@gmail.com" class="btn btn-default">RSVP</a>
-        <%= link_to "LEAVE A MESSAGE", new_message_path, class: "btn btn-default" %>
-      </div>
+<!-- Cover -->
+<div class="page">
+  <!-- Desktop: Cover -->
+  <div class="cover hidden-xs" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-1.jpg' %>)">
+  </div>
+  <div class="content bottom hidden-xs">
+    <div class="text">
+      <h1>SHIRLEY & ALAN</h1>
+      <h2>23 DECEMBER 2017</h2>
+      <%= link_to "LEAVE A MESSAGE", new_message_path, class: "btn btn-default" %>
+      <a href="https://www.instagram.com/explore/tags/alovesoshir/" class="btn btn-default">INSTAGRAM</a>
+      <%= link_to "GALLERY", photos_path, class: "btn btn-default" %>
     </div>
   </div>
-
-  <div class="flex">
-    <!-- Desktop: Schedule -->
-    <div class="half hidden-xs" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-2.jpg' %>)">
-      <%= render "schedule" %>
-    </div>
-    <!-- Desktop: Story -->
-    <div class="half hidden-xs" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-3.jpg' %>)">
-      <%= render "story" %>
-    </div>
-
-    <!-- Mobile: Schedule -->
-    <div class="half hidden-sm hidden-md hidden-lg" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'jap-portrait-2.jpg' %>)">
-      <%= render "schedule" %>
-    </div>
-    <!-- Mobile: Story -->
-    <div class="half hidden-sm hidden-md hidden-lg" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'jap-portrait-3.jpg' %>)">
-      <%= render "story" %>
+  <!-- Mobile: Cover -->
+  <div class="cover hidden-sm hidden-md hidden-lg" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'jap-portrait-1.jpg' %>)">
+  </div>
+  <div class="mobile content bottom hidden-sm hidden-md hidden-lg">
+    <div class="text">
+      <h1>SHIRLEY & ALAN</h1>
+      <h2>23 DECEMBER 2017</h2>
+      <a href="mailto:alovesoshir@gmail.com" class="btn btn-default">RSVP</a>
+      <%= link_to "LEAVE A MESSAGE", new_message_path, class: "btn btn-default" %>
     </div>
   </div>
-
-  <!-- Anchor -->
-  <div class="page">
-    <!-- Desktop: Anchor -->
-    <div class="anchor hidden-xs" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'light-4.jpg' %>)">
-    </div>
-    <!-- Mobile: Anchor -->
-    <div class="anchor hidden-sm hidden-md hidden-lg" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'jap-portrait-4.jpg' %>)">
-    </div>
-  </div>
+</div>
